@@ -212,7 +212,7 @@
                                                                     cachePolicy:cachePolicy
                                                                 timeoutInterval:timeoutInterval];
         
-        request.HTTPShouldHandleCookies = (options & SDWebImageDownloaderHandleCookies);
+        request.HTTPShouldHandleCookies = YES;
         request.HTTPShouldUsePipelining = YES;
         if (sself.headersFilter) {
             request.allHTTPHeaderFields = sself.headersFilter(url, [sself allHTTPHeaderFields]);
